@@ -1,0 +1,180 @@
+/* ProductSelection.css */
+
+/* Full-page container with unique class */
+.product-selection-page {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  margin-left: calc(-50vw + 50%);
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  overflow-x: hidden;
+}
+
+/* Main content wrapper */
+.product-selection-container {
+  max-width: 100%;
+  padding: 2rem 5%;
+  margin: 0 auto;
+}
+
+/* Page Title with unique selector */
+.product-selection-page .page-title {
+  font-size: 2.8rem;
+  color: #2d3436;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, #2553bc, #3f78c7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  margin: 0 auto 3rem;
+}
+
+/* Table container with full width */
+.product-selection-content {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 60vh;
+}
+
+/* Full-width table */
+.product-selection-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Ensure proper column width distribution */
+.product-selection-list th {
+  text-align: left;
+  padding: 12px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #1f88b5, #a29bfe);
+  color: white;
+}
+
+.product-selection-list td {
+  text-align: left;
+  padding: 12px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Define fixed column widths for alignment */
+.product-selection-list th:nth-child(1),
+.product-selection-list td:nth-child(1) {
+  width: 50%;
+}
+
+.product-selection-list th:nth-child(2),
+.product-selection-list td:nth-child(2) {
+  width: 25%;
+}
+
+.product-selection-list th:nth-child(3),
+.product-selection-list td:nth-child(3) {
+  width: 25%;
+}
+
+/* Ensure inputs are properly aligned */
+.quantity-input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #dfe6e9;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  background: white;
+}
+
+/* Button specific to this page */
+.product-selection-page .continue-button {
+  background: linear-gradient(90deg, #278aa3, #a29bfe);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(108, 92, 231, 0.4);
+  display: block;
+  margin: 2rem auto 0;
+  width: fit-content;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .product-selection-page .page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .product-selection-content {
+    padding: 1.5rem;
+    width: 95%;
+  }
+  
+  .product-selection-page .quantity-input {
+    width: 70px;
+    padding: 0.5rem;
+  }
+  
+  .product-selection-page .continue-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+.continue-button {
+  display: block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  background-color: #5a6e77;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Change color and add slight hover effect */
+.continue-button:hover {
+  background-color: #2a6b96; /* Darker blue */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Disabled button styling */
+.continue-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .product-selection-page .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .product-selection-content {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  .product-selection-page {
+    padding: 1rem 0;
+  }
+}

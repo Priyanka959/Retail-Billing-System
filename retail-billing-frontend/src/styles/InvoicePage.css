@@ -1,0 +1,121 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #aebbcf, #c3cfe2);
+  text-align: center;
+}
+
+/* Invoice Container with Glassmorphism */
+.invoice-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.849);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #6c5ce7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Customer Details */
+.customer-info {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.invoice-table th,
+.invoice-table td {
+  padding: 12px;
+  text-align: center;
+}
+
+.invoice-table th {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.invoice-table tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+/* Subtotal, GST, and Total Amount Styling */
+.subtotal,
+.gst-amount,
+.total-amount {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.subtotal {
+  color: #2d3436;
+}
+
+.gst-amount {
+  color: #0984e3;
+}
+
+.total-amount {
+  color: #d63031;
+}
+.gst-info {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2d3436;
+  margin-top: 10px;
+}
+
+/* QR Code Section */
+.qr-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Thank You Message */
+.thank-you {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6c5ce7;
+}
+
+/* Animation for Loading */
+.loading-message {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2d3436;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}

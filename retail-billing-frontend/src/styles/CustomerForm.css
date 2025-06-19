@@ -1,0 +1,97 @@
+/* CustomerForm.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #5b6169;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 168, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 206, 201, 0.1) 0%, transparent 50%);
+}
+
+.customer-container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 
+    12px 12px 24px rgba(0, 0, 0, 0.15),
+    -12px -12px 24px rgba(0, 0, 0, 0.15),
+    12px -12px 24px rgba(0, 0, 0, 0.15),
+    -12px 12px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Add subtle glow on hover */
+.customer-container:hover {
+  box-shadow: 
+    15px 15px 30px rgba(0, 0, 0, 0.2),
+    -15px -15px 30px rgba(0, 0, 0, 0.2),
+    15px -15px 30px rgba(0, 0, 0, 0.2),
+    -15px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Matching styles with login page */
+.welcome-message {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3436;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: #636e72;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.customer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers elements inside */
+  gap: 20px;
+}
+
+.customer-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e0e4e7;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+ 
+}
+
+.customer-input:focus {
+  outline: none;
+  border-color: #00a8ff;
+  box-shadow: 0 0 0 3px rgba(0, 168, 255, 0.1);
+}
+
+.customer-button {
+  width: auto;
+  padding: 14px 40px;
+  background-color: #00a8ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.customer-button:hover {
+  background-color: #0097e6;
+}
